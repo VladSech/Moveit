@@ -1,4 +1,5 @@
-<div id="header" class="header">
+<?php echo
+'<div id="header" class="header">
     <div class="clearfix">
         <a href="../index.html" class="logo-header"><img src="../images/logo.png" /></a>
         <h1 class="head">Туризма сайт</h1>
@@ -62,4 +63,5 @@
             <li><a href="#"></a></li>
         </ul>
     </div>
-</div>
+</div>';
+?>

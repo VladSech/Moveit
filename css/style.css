@@ -50,14 +50,22 @@ body{
 }
 .header .main-menu{
     float:left;
+    list-style: none;
 }
-.header li{
+.main-menu ul>li{
+    position: relative;
     display:inline-block;
     border: 1px solid black;
-    hight:30px;
-}
-.header li a{
+    height: 70px;
+    min-width: 100px;
 
+}
+.main-menu .sub-menu{
+    position: absolute;
+}
+.main-menu a{
+    display: block;
+    text-align: center;
 }
 .header:after{
     content: "";

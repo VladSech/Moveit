@@ -62,8 +62,20 @@ body{
 .main-menu .sub-menu{
     position: absolute;
     display: none;
+    background: #e7530b;
 }
-.main-menu li:hover .sub-menu{
+.main-menu .sub-menu a{
+    padding: 5px 10px;
+    width: 80px;
+}
+.main-menu .sub-menu li{
+    border: 1px solid black;
+    margin-bottom: -1px;
+}
+.main-menu a:hover{
+    background: #a4a26f;
+}
+.main-menu>ul>li:hover .sub-menu{
     display: block;
 }
 .main-menu a{

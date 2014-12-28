@@ -1,0 +1,69 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+a { text-decoration: none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+del { text-decoration: line-through; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+html { overflow-y: scroll; }
+a:hover, a:active, input, input:active { outline: none; }
+ul, ol {list-style: none;}
+
+/* Normalizing form elements
+*******************************************************************************/
+textarea { overflow: auto; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+
+button, input, select, textarea { margin: 0; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.clearfix:before, .clearfix:after, .f_row:before, .f_row:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after, .f_row:after { clear: both; }
+.ie6 .clearfix, .ie7 .clearfix, .ie6 .f_row, .ie7 .f_row { zoom: 1; }
+
+.none_submit {
+    background: transparent;
+    border: 0px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    filter:alpha(opacity=0);/*Needed for IE*/
+    -moz-opacity:0;/*Older mozilla broswers like NN*/
+    -khtml-opacity: 0;/*Old versions of Safari and "KHTML" browser engines*/
+    opacity: 0;/*FF, Safari, and Opera*/
+}

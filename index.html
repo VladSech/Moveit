@@ -1,0 +1,154 @@
+<!doctype html>
+<head xmlns="http://www.w3.org/1999/html">
+    <meta charset="utf-8">
+    <title>Move it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+       <div id="header" class="header">
+           <div class="clearfix">
+                <a href="index.html" class="logo-header"><img src="images/logo.png" /></a>
+               <h1 class="head">Туризма сайт</h1>
+                <div class="search">
+                    <label for="searching"></label>
+                    <form class="searchform" action="">
+                        <input id="searching" type="text" name="searching" value="Поиск по сайту" />
+                        <input type="submit" value="Найти">
+                    </form>
+                </div>
+               <div class="main-menu">
+                   <ul>
+                       <li>
+                           <a href="index.html">
+                           <div class="icon"></div>
+                                Главная
+                           </a>
+                       </li>
+                       <li><a href="#action-menu">
+                           <div class="icon icon-action"></div>
+                           <br/>Мероприятия</a></li>
+                       <li><a href="#photo-menu">
+                           <div class="icon icon-photo"></div>
+                           <br/>Фото</a></li>
+                       <li><a href="#video-menu">
+                           <div class="icon icon-video"></div>
+                           <br/>Видео</a></li>
+                       <li><a href="#article-menu">
+                           <div class="icon icon-article"></div>
+                           <br/>Статьи</a></li>
+                       <li><a href="#">
+                           <div class="icon icon-market"></div>
+                           <br/>Барахолка</a></li>
+                       <li><a href="#">
+                           <div class="icon icon-contact"></div>
+                           <br/>Контакты</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div id="action-menu" class="hide">
+               <ul>
+                   <li><a href="#"></a></li>
+                   <li><a href="#"></a></li>
+               </ul>
+           </div>
+           <div id="photo-menu" class="hide">
+               <ul>
+                   <li><a href="#"></a></li>
+                   <li><a href="#"></a></li>
+               </ul>
+           </div>
+           <div id="video-menu" class="hide">
+               <ul>
+                   <li><a href="#"></a></li>
+                   <li><a href="#"></a></li>
+               </ul>
+           </div>
+           <div id="article-menu" class="hide">
+               <ul>
+                   <li><a href="#"></a></li>
+                   <li><a href="#"></a></li>
+               </ul>
+           </div>
+       </div>
+        <div class="clearfix">
+            <div id="sidebar" class="sidebar">
+                <p>Здесь могла бы быть ваша реклама и еще что-то, я пока не придумал что</p>
+            </div>
+            <div id="content" class="content">
+               <table cellspacing="10" cellpadding="10" border="1">
+                   <thead align="center">
+                         <tr>
+                            <td colspan="3">вроде Хэдер</td>
+                         </tr>
+                   </thead>
+                   <tfoot>
+                    <tr>
+                        <td colspan="3"> Типа футер</td>
+                    </tr>
+                   </tfoot>
+                   <tbody>
+                       <tr>
+                           <td>Лево</td>
+                           <td>Центр</td>
+                           <td>Право</td>
+                       </tr>
+                   </tbody>
+               </table>
+                <div>
+                    <form action="#" method="post">
+                        <p>Форма для разрешения на заполнение форм</p>
+                        <fieldset>
+                            <legend>Мы и так знаем, кто вы, но на всякий случай заполните</legend>
+                            <label for="name">Ваше отчество</label>
+                            <input id="name" autofocus /> <br />
+                            <label for="tel">Введите телефон в формате 0хх-ххх-хххх</label>
+                            <input id="tel" type="tel" pattern="0[0-9]{2}-[0-9]{3}-[0-9]{4}" /> <br />
+                            <label for="mail">Email</label>
+                            <input id="mail" type="email" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>Всякая всячина</legend>
+                            <label for="age">Сколько вам килодней</label>
+                            <input id="age" type="number" size="3" min="1" max="100" value="1" /><br />
+                            <label for="humanity">Ваша раса</label>
+                            <select id="humanity">
+                                <option value="male">Мужчина</option>
+                                <option value="female">Женщина</option>
+                                <option value="sectoid">Сектоид</option>
+                                <option value="elf">Эльф</option>
+                                <option value="crab">Краб</option>
+                            </select><br />
+                            <label for="myself">О себе родимом</label>
+                            <textarea id="myself" cols="40" rows="10"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>И еще чуть-чуть</legend>
+                            <p>Ваше любимое оружие</p>
+                            <label><input type="checkbox" />Глок</label>
+                            <label><input type="checkbox" />Калаш</label>
+                            <label><input type="checkbox" />Вертолет</label>
+                            <label><input type="checkbox" />Кошка</label>
+                            <label><input type="checkbox" />Звезда смерти</label>
+                            <p>Ведут ли за вами наблюдение спецслужбы</p>
+                            <label><input name="Watching" type="radio" value="no1" />Нет</label>
+                            <label><input name="Watching" type="radio" value="no2" />Неееет</label>
+                        </fieldset>
+                        <p>Ваша фотка:</p>
+                        <input type="file" accept="multipart/form-data" method="post"/><br />
+                        <input type="submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="footer">
+            <div class="clearfix">
+                <p>Олл ригхтз защищены</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
